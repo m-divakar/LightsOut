@@ -1,0 +1,103 @@
+.Board {
+   margin: 0 auto;
+   border-radius: 2px;
+   box-shadow: 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+.content {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 70vh;
+}
+
+@font-face {
+   font-family: neon;
+   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.board-title {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.neon-green {
+   font-family: neon;
+   color: #1e6f00;
+   text-shadow: 0 0 -5vw #195d00;
+   animation: neon-green 1.5s linear infinite;
+   -moz-animation: neon-green 1.5s linear infinite;
+   -webkit-animation: neon-green 1.5s linear infinite;
+}
+
+.neon-orange {
+   font-family: neon;
+   color: #fb4264;
+   text-shadow: 0 0 3vw #f40a35;
+   animation: neon-orange 1s ease infinite;
+   -moz-animation: neon-orange 1s ease infinite;
+   -webkit-animation: neon-orange 1s ease infinite;
+}
+
+.neon-blue {
+   font-family: neon;
+   color: #426dfb;
+   text-shadow: 0 0 3vw #2356ff;
+   animation: neon-blue 2s linear infinite;
+   -moz-animation: neon-blue 2s linear infinite;
+   -webkit-animation: neon-blue 2s linear infinite;
+   -o-animation: neon-blue 2s linear infinite;
+}
+.title {
+   font-size: 5rem;
+}
+
+.btn {
+   font-size: 2rem;
+}
+h1 {
+   display: inline;
+}
+.btn {
+   cursor: pointer;
+}
+
+@keyframes neon-green {
+   0%,
+   100% {
+      text-shadow: 0 0 0.5vw #60b00f, 0 0 1.5vw #06bb27, 0 0 5vw #74da00,
+         0 0 5vw #46ab24, 0 0 0.2vw #44d700, 0.25vw 0.25vw 0.5vw #dabc50;
+      color: #57fd45;
+   }
+   50% {
+      text-shadow: 0 0 0.25vw #25ff19, 0 0 0.75vw #2a800b, 0 0 2.5vw #15800b,
+         0 0 2.5vw #28800b, 0 0 0.1vw #1d800b, 0.25vw 0.25vw 0.05vw #0a400f;
+      color: #148018;
+   }
+}
+@keyframes neon-orange {
+   0%,
+   100% {
+      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+         0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+      color: #fed128;
+   }
+   50% {
+      text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+         0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+      color: #806914;
+   }
+}
+
+@keyframes neon-blue {
+   0%,
+   100% {
+      text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+         0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+      color: #28d7fe;
+   }
+   50% {
+      text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+         0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+      color: #146c80;
+   }
+}
