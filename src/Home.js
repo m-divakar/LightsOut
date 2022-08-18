@@ -16,6 +16,11 @@ const Home = () => {
             <div className="neon-orange">
                <Link to="/hard">Hard</Link>
             </div>
+            <p style={{ fontSize: "20px" }}>
+               Instructions: When a tile is clicked, It along with it's
+               neighbors in all 4 cardinal directions will flip to the opposite
+               state. Turn off all the tiles to win.
+            </p>
          </div>
       </>
    );
